@@ -1,4 +1,5 @@
 Link repo: https://github.com/dpnguyen53/bc14angular
+Link repo: https://github.com/dpnguyen53/bc14angularrouting
 
 ======= Buoi 1 =======
 * Component
@@ -40,8 +41,6 @@ Link repo: https://github.com/dpnguyen53/bc14angular
     - Routing:
         + Routing Component
         + Routing Module
-    - Service
-    - Angular Material
 
 ======= Buoi 5 =======
     - Routing:
