@@ -46,3 +46,12 @@ Link repo: https://github.com/dpnguyen53/bc14angularrouting
     - Routing:
         + Routing Module (Lazy)
     - Service
+
+======= Buoi 6 =======
+    - Service call api
+    - Params url:
+        - Một Param
+        - Nhiều Params
+    - Validation Form
+    - Dashboard
+    - Auth Page

@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+        <div class="form-group">
+          <label>Tai Khoan</label>
+          <input
+            type="text"
+            class="form-control"
+            name="taiKhoan"
+            ngModel
+            required
+            #TaiKhoan="ngModel"
+            minlength="7"
+            maxlength="15"
+          />
+          <div
+            class="alert alert-danger"
+            *ngIf="TaiKhoan.errors && (TaiKhoan.dirty || TaiKhoan.touched)"
+          >
+            <!-- Kiem tra rong -->
+            <div *ngIf="TaiKhoan.errors.required">Tai khoan k dc rong</div>
+
+            <!-- Kiem tra do dai ky tu -->
+            <div *ngIf="TaiKhoan.errors.minlength || TaiKhoan.errors.maxlength">
+              Do dai ky tu phai 7 - 15
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Mat Khau</label>
+          <input type="text" class="form-control" name="matKhau" ngModel />
+        </div>
+        <button class="btn btn-success" [disabled]="!loginForm.valid">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
