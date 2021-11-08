@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from 'src/app/_core/guards/auth.guard';
 import { AdminTemplateComponent } from './admin-template.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
           import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
       },
     ],
+    canActivate: [AuthGuard],
   },
 ];
 

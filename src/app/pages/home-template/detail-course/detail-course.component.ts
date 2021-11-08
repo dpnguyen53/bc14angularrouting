@@ -33,8 +33,10 @@ export class DetailCourseComponent implements OnInit {
 
   _getDetailCourse() {
     //goi toi service
-    this.dataService.getDetailCourse(this.id).subscribe((result: any) => {
-      this.course = result;
-    });
+    this.dataService
+      .get(`QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${this.id}`)
+      .subscribe((result: any) => {
+        this.course = result;
+      });
   }
 }
