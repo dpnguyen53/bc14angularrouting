@@ -62,6 +62,10 @@ Link repo: https://github.com/dpnguyen53/bc14angularrouting
 - JWT
 - Refactor Service
 
-
+======= Buoi 8 =======
 - Pipes
 - Lifecycle
+- BehaviorSubject
+- Sharing Modules
+- Angular Material
+- Alias

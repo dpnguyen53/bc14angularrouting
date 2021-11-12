@@ -1,1 +1,12 @@
-<p>home works!</p>
+<p>{{ info | uppercase }}</p>
+<p>{{ info | lowercase }}</p>
+<p>{{ people | json }}</p>
+<p>{{ array | slice: 1:5 }}</p>
+<p>{{ number | percent }}</p>
+
+<input type="text" [(ngModel)]="inputValue" />
+{{ inputValue }}
+<app-child-home [data]="inputValue"></app-child-home>
+
+<app-button></app-button>
+<mat-checkbox class="example-margin">Check me!</mat-checkbox>
